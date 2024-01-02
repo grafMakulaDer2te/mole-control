@@ -1,4 +1,4 @@
-# Mole Control for the Gamebuino Classic
+# Mole Control for the Gamebuino Meta
 ## Description
 This is the port from my a simple Mole Whacking game to the gamebuino meta.
 ## Setup
