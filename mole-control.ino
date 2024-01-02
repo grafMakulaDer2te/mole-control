@@ -1,10 +1,9 @@
 /*
 * Mole Control by Markus Klingler (grafMakulaDer2te)
 */
-//classic Version
+//Gamebuino Meta Version
 
-#include <SPI.h>
-#include <Gamebuino.h>
+#include <Gamebuino-Compat.h>
 
 #define SCR_CLK 13;
 #define SCR_DIN 11;
