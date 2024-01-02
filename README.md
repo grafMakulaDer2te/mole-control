@@ -1,6 +1,6 @@
 # Mole Control for the Gamebuino Meta
 ## Description
-This is the port from my a simple Mole Whacking game to the gamebuino meta.
+This is the port from my simple Mole Whacking game to the gamebuino meta.
 ## Setup
 Copy the folder mole-control onto your SD-card.
 ## Game play
