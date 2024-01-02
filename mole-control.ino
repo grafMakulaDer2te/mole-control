@@ -142,7 +142,7 @@ int8_t hammerX = 0;
 int8_t hammerY = 0;
 
 int16_t score = 0;
-int8_t lifes = 11;
+int8_t lifes = 10;
 
 uint16_t level = 1;
 #define level_initalScoreLevelUp 5
@@ -196,7 +196,7 @@ void loop() {
       hammerY--;
       if (hammerY < 0) hammerY = 0;
       btnPressed = true;
-      rand_counter += 4234;
+      rand_counter &= ~(0x00000F0F);
     };
     if (gB.buttons.pressed(BTN_LEFT)) {
       hammerX--;
@@ -208,13 +208,13 @@ void loop() {
       hammerX++;
       if (hammerX > 2) hammerX = 2;
       btnPressed = true;
-      rand_counter += -1324;
-      rand_counter = ~rand_counter;
+      rand_counter |= 0x000000FF;
     };
     if (gB.buttons.pressed(BTN_A)) {
       clickMole();
       btnPressed = true;
       rand_counter += 1234;
+      rand_counter = ~rand_counter;
     };
     if (gB.buttons.pressed(BTN_C)) {  //restart
       gB.display.setFont(initScreenFont);
